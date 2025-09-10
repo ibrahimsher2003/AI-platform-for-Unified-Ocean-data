@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUX</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+               
+                <h1>FLUX</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#data-modules">Data Modules</a></li>
+                    <li><a href="#why-it-matters">Impact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>AI-Driven Unified Data Platform for Oceanographic, Fisheries, and Molecular Biodiversity Insights</h2>
+                <p class="subtitle">Empowering India's scientific community with next-generation tools for holistic marine ecosystem assessment.</p>
+                <button class="cta-button pulse">Explore the Platform <i class="fas fa-arrow-circle-right"></i></button>
+            </div>
+        </section>
+
+        <section id="overview" class="section-padded">
+            <div class="container">
+                <h2 class="section-title">Platform Overview <i class="fas fa-info-circle"></i></h2>
+                <p>India, with its vast coastline and rich marine biodiversity, relies heavily on the health of its ocean ecosystems. CMLRE plays a pivotal role in collecting, managing, and analysing a broad spectrum of marine data.</p>
+                <p>This intelligent digital platform integrates heterogeneous datasets from oceanography, taxonomy, morphology, and molecular biology into a single unified system, powered by AI.</p>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-cloud-upload-alt icon-large"></i>
+                        <h3>Automated Data Ingestion</h3>
+                        <p>Streamlined processes for standardisation and metadata tagging using internationally accepted formats.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chart-line icon-large"></i>
+                        <h3>Cross-Disciplinary Correlation</h3>
+                        <p>Study how ocean parameters influence biodiversity, fish distribution, and ecosystem health with advanced analytics.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-eye icon-large"></i>
+                        <h3>Interactive Visualizations</h3>
+                        <p>Intuitive tools for otolith shape, morphometrics, taxonomic classification, and eDNA data exploration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="section-padded bg-light">
+            <div class="container">
+                <h2 class="section-title">Interactive Dashboard <i class="fas fa-tachometer-alt"></i></h2>
+                <p>Gain real-time, AI-powered insights into oceanographic trends, fisheries data, and biodiversity metrics.</p>
+                <div class="dashboard-grid">
+                    <div class="dashboard-panel">
+                        <h3>Oceanographic Parameters</h3>
+                        <p>Temperature, Salinity, pH trends across regions.</p>
+                        <div class="chart-placeholder">
+                            <i class="fas fa-wave-square icon-medium"></i>
+                            <p>Dynamic Ocean Data Chart</p>
+                        </div>
+                    </div>
+                    <div class="dashboard-panel">
+                        <h3>Fisheries Data Analytics</h3>
+                        <p>Species abundance, catch rates, and diversity assessments.</p>
+                        <div class="chart-placeholder">
+                            <i class="fas fa-fish icon-medium"></i>
+                            <p>Interactive Fisheries Graph</p>
+                        </div>
+                    </div>
+                    <div class="dashboard-panel">
+                        <h3>Marine Biodiversity</h3>
+                        <p>eDNA detections, species distribution, and ecosystem health.</p>
+                        <div class="chart-placeholder">
+                            <i class="fas fa-dna icon-medium"></i>
+                            <p>Biodiversity Heatmap/Map</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="view-all-button hover-grow">View Full Dashboard <i class="fas fa-external-link-alt"></i></button>
+            </div>
+        </section>
+
+        <section id="data-modules" class="section-padded">
+            <div class="container">
+                <h2 class="section-title">Integrated Data Modules <i class="fas fa-boxes"></i></h2>
+                <p>Specialized, AI-enhanced tools for managing and visualizing diverse marine datasets with precision.</p>
+                <div class="module-tabs">
+                    <button class="tab-button active hover-lift" data-module="taxonomy"><i class="fas fa-microscope"></i> Taxonomy & Morphology</button>
+                    <button class="tab-button hover-lift" data-module="edna"><i class="fas fa-dna"></i> Molecular & eDNA</button>
+                    <button class="tab-button hover-lift" data-module="oceanography"><i class="fas fa-water"></i> Oceanographic Data</button>
+                </div>
+
+                <div id="taxonomy-module" class="module-content active">
+                    <h3>AI-Powered Taxonomy & Otolith Morphology Analysis</h3>
+                    <p>Advanced interactive visualization tools for otolith shape analysis, morphometrics, and AI-driven taxonomic classification and species identification.</p>
+                    <div class="module-viz-placeholder">
+                        <i class="fas fa-fingerprint icon-large"></i>
+                        <p>Otolith/Morphology Analyzer Interface</p>
+                    </div>
+                    <button class="module-action-button hover-grow">Explore Taxonomy Database <i class="fas fa-search"></i></button>
+                </div>
+
+                <div id="edna-module" class="module-content">
+                    <h3>Molecular & eDNA Data Repository with Species Matching</h3>
+                    <p>Secure storage, efficient retrieval, and AI-assisted species matching for environmental DNA (eDNA) samples, revealing hidden biodiversity.</p>
+                    <div class="module-viz-placeholder">
+                        <i class="fas fa-flask icon-large"></i>
+                        <p>eDNA Sequence Browser & Matcher</p>
+                    </div>
+                    <button class="module-action-button hover-grow">Access eDNA Repository <i class="fas fa-database"></i></button>
+                </div>
+
+                <div id="oceanography-module" class="module-content">
+                    <h3>Comprehensive Oceanographic Data Explorer</h3>
+                    <p>Access and analyze high-resolution physical, chemical, and biological oceanography datasets with dynamic filtering and visualization capabilities.</p>
+                    <div class="module-viz-placeholder">
+                        <i class="fas fa-globe-americas icon-large"></i>
+                        <p>Interactive Oceanographic Map/Charts</p>
+                    </div>
+                    <button class="module-action-button hover-grow">View Oceanographic Datasets <i class="fas fa-chart-area"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-it-matters" class="section-padded bg-light">
+            <div class="container">
+                <h2 class="section-title">Why This Platform Matters <i class="fas fa-lightbulb"></i></h2>
+                <div class="matter-grid">
+                    <div class="matter-item">
+                        <i class="fas fa-sitemap icon-large"></i>
+                        <h3>National Marine Data Backbone</h3>
+                        <p>Serving as a foundational resource, empowering India's scientific community for holistic marine ecosystem assessment.</p>
+                    </div>
+                    <div class="matter-item">
+                        <i class="fas fa-rocket icon-large"></i>
+                        <h3>Enhanced Research Efficiency</h3>
+                        <p>Accelerating marine biodiversity research and enabling real-time, data-driven decision-making for conservation.</p>
+                    </div>
+                    <div class="matter-item">
+                        <i class="fas fa-ship icon-large"></i>
+                        <h3>Sustainable Blue Economy</h3>
+                        <p>Supporting sustainable fisheries and conservation planning, driving India's blue economy initiatives with integrated insights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padded">
+            <div class="container">
+                <h2 class="section-title">Get in Touch <i class="fas fa-envelope"></i></h2>
+                <p class="centered-text">Have questions or want to collaborate? Reach out to us.</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="cta-button hover-grow">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> CMLRE Unified Data Platform. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
